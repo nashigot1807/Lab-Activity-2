@@ -1,6 +1,5 @@
 public class Main {
     public static void main(String[] args) {
-        
         Vehicle v1 = new Vehicle("Toyota", "Corolla", 2018);
         Vehicle v2 = new Vehicle("Ford", "Mustang", 1995); // Vintage (>25 years old)
         Vehicle v3 = new Vehicle("Honda", "Civic", 2022);
