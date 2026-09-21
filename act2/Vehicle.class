@@ -1,3 +1,4 @@
+
 class Vehicle {
     private String make;
     private String model;
@@ -15,12 +16,12 @@ class Vehicle {
         System.out.println("Make: " + make + ", Model: " + model + ", Year: " + year);
     }
 
-    
+   
     public int calculateAge() {
         return 2026 - year;
     }
 
-   
+    
     public boolean isVintage() {
         return calculateAge() > 25;
     }
