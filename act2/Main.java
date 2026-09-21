@@ -1,10 +1,38 @@
+// 1. Vehicle Class (Must NOT have the 'public' keyword!)
+class Vehicle {
+    private String make;
+    private String model;
+    private int year;
+
+    // Constructor to initialize fields
+    public Vehicle(String make, String model, int year) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+    }
+
+    // Method to display vehicle details
+    public void displayInfo() {
+        System.out.println("Make: " + make + ", Model: " + model + ", Year: " + year);
+    }
+
+    // Method to calculate age
+    public int calculateAge() {
+        return 2026 - year;
+    }
+
+    // Method to check if vintage (>25 years old)
+    public boolean isVintage() {
+        return calculateAge() > 25;
+    }
+}
+
+// 2. Main Class
 public class Main {
     public static void main(String[] args) {
-        
         Vehicle v1 = new Vehicle("Toyota", "Corolla", 2018);
         Vehicle v2 = new Vehicle("Ford", "Mustang", 1995); // Vintage (>25 years old)
         Vehicle v3 = new Vehicle("Honda", "Civic", 2022);
-
 
         System.out.println("--- Vehicle 1 ---");
         v1.displayInfo();
